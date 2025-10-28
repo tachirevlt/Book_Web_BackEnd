@@ -17,7 +17,8 @@ namespace Infrastructure
             services.AddDbContext<AppDbContext>((provider, options) =>
             {
                 var connection = provider.GetRequiredService<IOptionsSnapshot<ConnectionStringOptions>>().Value.DefaultConnection;
-                options.UseSqlServer(connection);
+                // options.UseSqlServer(connection);
+                options.UseInMemoryDatabase("BookRecDb_InMemory");
             });
 
             services.AddScoped<IBookRepository, BookRepository>();

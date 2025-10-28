@@ -13,3 +13,4 @@ namespace Infrastructure.Persistence
         public DbSet<BookEntity> Books { get; set; } = null!;
     }
 }
+

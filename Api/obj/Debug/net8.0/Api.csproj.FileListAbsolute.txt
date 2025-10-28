@@ -15,6 +15,7 @@ E:\CodeFolder\Cs_project\BookRecBackend\Api\bin\Debug\net8.0\Microsoft.Bcl.Async
 E:\CodeFolder\Cs_project\BookRecBackend\Api\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
 E:\CodeFolder\Cs_project\BookRecBackend\Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 E:\CodeFolder\Cs_project\BookRecBackend\Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\CodeFolder\Cs_project\BookRecBackend\Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
 E:\CodeFolder\Cs_project\BookRecBackend\Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 E:\CodeFolder\Cs_project\BookRecBackend\Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 E:\CodeFolder\Cs_project\BookRecBackend\Api\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
