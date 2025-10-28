@@ -42,7 +42,12 @@ namespace Infrastructure.Repositories
             existingBook.title = updatedBookData.title;
             existingBook.authors = updatedBookData.authors;
             existingBook.year = updatedBookData.year;
-            // ... cập nhật các trường khác ...
+            existingBook.books_count = updatedBookData.books_count;
+            existingBook.work_id = updatedBookData.work_id;
+            existingBook.isbn = updatedBookData.isbn;
+            existingBook.language_code = updatedBookData.language_code;
+            existingBook.average_rating = updatedBookData.average_rating;
+            existingBook.ratings = updatedBookData.ratings;
 
             _db.Books.Update(existingBook); // Update entity đã được track
             await _db.SaveChangesAsync(ct);

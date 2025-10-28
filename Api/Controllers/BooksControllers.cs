@@ -13,7 +13,7 @@ namespace Api.Controllers
     public class BooksController(ISender sender) : ControllerBase
     {
         [HttpPost("")]
-        public async Task<IActionResult> AddEmployeeAsync([FromBody] BookEntity book)
+        public async Task<IActionResult> AddBookAsync([FromBody] BookEntity book)
         { 
             var result = await sender.Send(new AddBookCommand(book));
             return Ok(result);
@@ -23,21 +23,20 @@ namespace Api.Controllers
         public async Task<IActionResult> UpdateBookAsync([FromRoute] Guid BookId, [FromBody] BookEntity Book)
         {
             var result = await sender.Send(new UpdateBookCommand(BookId, Book));
-            if (result == null) // Hoặc dùng Result Pattern nếu bạn triển khai
+            if (result == null)
             {
-                return NotFound(); // Trả về 404 Not Found nếu không tìm thấy
+                return NotFound();
             }
             return Ok(result);
         }
 
-        // Ví dụ trong BooksController.cs
         [HttpGet("{BookId}")]
         public async Task<IActionResult> GetBookByIdAsync([FromRoute] Guid BookId)
         {
             var result = await sender.Send(new GetBookByIdQuery(BookId));
             if (result == null)
             {
-                return NotFound($"Không tìm thấy sách với ID: {BookId}"); // Trả về 404
+                return NotFound($"Không tìm thấy sách với ID: {BookId}"); 
             }
             return Ok(result);
         }
@@ -48,10 +47,10 @@ namespace Api.Controllers
             var success = await sender.Send(new DeleteBookCommand(BookId));
             if (!success)
             {
-                return NotFound($"Không tìm thấy sách với ID: {BookId} để xóa."); // Trả về 404
+                return NotFound($"Không tìm thấy sách với ID: {BookId} để xóa."); 
             }
-            return Ok(new { message = "Xóa sách thành công." }); // Trả về 200 OK với thông báo
-            // Hoặc có thể trả về NoContent() (204) cũng là một lựa chọn tốt cho Delete
+            return Ok(new { message = "Xóa sách thành công." });
+
         }
     }
 

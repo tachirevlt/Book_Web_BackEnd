@@ -1,11 +1,8 @@
-// File: Application/Queries/GetJokeQuery.cs
 using MediatR;
-using Core.Models; // Namespace chứa JokeModel
+using Core.Models; 
 
 namespace Application.Queries
 {
-    // Record này định nghĩa yêu cầu lấy một câu đùa (joke).
-    // Không cần tham số đầu vào.
-    // Kế thừa IRequest<JokeModel> để chỉ định kiểu dữ liệu trả về.
+
     public record GetJokeQuery() : IRequest<JokeModel?>;
 }

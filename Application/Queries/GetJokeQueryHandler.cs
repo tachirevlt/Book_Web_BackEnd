@@ -1,7 +1,6 @@
-// File: Application/Queries/GetJokeQueryHandler.cs
 using MediatR;
-using Core.Interfaces; // Namespace chứa IExternalVendorRepository
-using Core.Models;    // Namespace chứa JokeModel
+using Core.Interfaces; 
+using Core.Models;    
 using System.Threading;
 using System.Threading.Tasks;
 

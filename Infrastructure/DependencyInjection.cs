@@ -17,8 +17,8 @@ namespace Infrastructure
             services.AddDbContext<AppDbContext>((provider, options) =>
             {
                 var connection = provider.GetRequiredService<IOptionsSnapshot<ConnectionStringOptions>>().Value.DefaultConnection;
-                // options.UseSqlServer(connection);
-                options.UseInMemoryDatabase("BookRecDb_InMemory");
+                options.UseSqlServer(connection);
+                // options.UseInMemoryDatabase("BookRecDb_InMemory");
             });
 
             services.AddScoped<IBookRepository, BookRepository>();
@@ -26,11 +26,11 @@ namespace Infrastructure
             services.AddHttpClient<IJokeHttpClientService, JokeHttpClientService>(client =>
             {
                 // Cấu hình BaseAddress và các header mặc định ở đây
-                client.BaseAddress = new Uri("https://official-joke-api.appspot.com/"); // Ví dụ URL
+                client.BaseAddress = new Uri("https://official-joke-api.appspot.com/");
             });
             services.AddHttpClient<ICoindeskHttpClientService, CoindeskHttpClientService>(client =>
             {
-                client.BaseAddress = new Uri("https://api.coindesk.com/v1/"); // Ví dụ URL
+                client.BaseAddress = new Uri("https://api.coindesk.com/v1/");
             });
             return services;
         }

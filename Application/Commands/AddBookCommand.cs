@@ -13,7 +13,11 @@ namespace Application.Commands
     {
         public async Task<BookEntity> Handle(AddBookCommand request, CancellationToken cancellationToken)
         {
-            // Sửa tên biến và gọi phương thức AddBookAsync đã sửa ở bước 2
+            
+            if (request.Book.Id == Guid.Empty)
+            {
+                request.Book.Id = Guid.NewGuid();
+            }
             var createdBook = await bookRepository.AddBookAsync(request.Book);
 
             // Publish sự kiện liên quan đến sách (cần tạo class BookCreatedEvent)

@@ -11,13 +11,11 @@ namespace Infrastructure.Repositories
     {
         public async Task<CoindeskData?> GetData()
         {
-            // Gọi service tương ứng
             return await coindeskService.GetData();
         }
 
         public async Task<JokeModel?> GetJoke()
         {
-            // Gọi service tương ứng
             return await jokeService.GetData();
         }
     }

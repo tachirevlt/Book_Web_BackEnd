@@ -1,7 +1,6 @@
-// File: Application/Queries/GetCoinkdeskDataQueryHandler.cs
 using MediatR;
-using Core.Interfaces; // Namespace chứa IExternalVendorRepository
-using Core.Models;    // Namespace chứa CoindeskData
+using Core.Interfaces; 
+using Core.Models;   
 using System.Threading;
 using System.Threading.Tasks;
 
