@@ -9,14 +9,14 @@ using System.Threading.Tasks;
 
 namespace Application.Queries
 {
-    public record GetBookByIdQuery(Guid BookId) : IRequest<BookEntity>;
+    public record GetBookByIdQuery(Guid BookId) : IRequest<BookEntity?>;
 
     public class GetBookByIdQueryHandler(IBookRepository bookRepository)
-        : IRequestHandler<GetBookByIdQuery, BookEntity>
+        : IRequestHandler<GetBookByIdQuery, BookEntity?>
     {
-        public async Task<BookEntity> Handle(GetBookByIdQuery request, CancellationToken cancellationToken)
+        public async Task<BookEntity?> Handle(GetBookByIdQuery request, CancellationToken cancellationToken)
         {
-            return await bookRepository.GetBookByIdAsync(request.BookId);
+            return await bookRepository.GetBookByIdAsync(request.BookId, cancellationToken);
         }
     }
 }

@@ -4,6 +4,6 @@ namespace Infrastructure.Services
 {
     public interface IJokeHttpClientService
     {
-        Task<JokeModel> GetData();
+        Task<JokeModel?> GetData();
     }
 }

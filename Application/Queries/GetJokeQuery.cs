@@ -7,5 +7,5 @@ namespace Application.Queries
     // Record này định nghĩa yêu cầu lấy một câu đùa (joke).
     // Không cần tham số đầu vào.
     // Kế thừa IRequest<JokeModel> để chỉ định kiểu dữ liệu trả về.
-    public record GetJokeQuery() : IRequest<JokeModel>;
+    public record GetJokeQuery() : IRequest<JokeModel?>;
 }

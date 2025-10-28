@@ -4,6 +4,6 @@ namespace Infrastructure.Services
 {
     public interface ICoindeskHttpClientService
     {
-        Task<CoindeskData> GetData();
+        Task<CoindeskData?> GetData(); // Thêm ?
     }
 }

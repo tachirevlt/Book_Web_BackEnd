@@ -5,7 +5,7 @@ namespace Infrastructure.Services
 {
     public class CoindeskHttpClientService(HttpClient httpClient) : ICoindeskHttpClientService
     {
-        public async Task<CoindeskData> GetData()
+        public async Task<CoindeskData?> GetData() // Thêm ?
         {
             return await httpClient.GetFromJsonAsync<CoindeskData>("bpi/currentprice.json");
         }

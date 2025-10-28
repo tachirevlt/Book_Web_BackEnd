@@ -14,7 +14,7 @@ namespace Infrastructure.Repositories
             _db = db;
         }
 
-        public async Task<BookEntity> GetBookByIdAsync(Guid id, CancellationToken ct = default)
+        public async Task<BookEntity?> GetBookByIdAsync(Guid id, CancellationToken ct = default)
         {
             var book = await _db.Books.FindAsync(new object?[] { id }, ct);
             // Xử lý trường hợp không tìm thấy nếu cần (ví dụ throw exception)

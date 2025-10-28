@@ -9,13 +9,13 @@ namespace Infrastructure.Repositories
         ICoindeskHttpClientService coindeskService,
         IJokeHttpClientService jokeService) : IExternalVendorRepository
     {
-        public async Task<CoindeskData> GetData()
+        public async Task<CoindeskData?> GetData()
         {
             // Gọi service tương ứng
             return await coindeskService.GetData();
         }
 
-        public async Task<JokeModel> GetJoke()
+        public async Task<JokeModel?> GetJoke()
         {
             // Gọi service tương ứng
             return await jokeService.GetData();
