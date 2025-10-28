@@ -1,3 +1,11 @@
+E:\CodeFolder\Cs_project\BookRecBackend\Api\obj\Debug\net8.0\Api.csproj.AssemblyReference.cache
+E:\CodeFolder\Cs_project\BookRecBackend\Api\obj\Debug\net8.0\Api.GeneratedMSBuildEditorConfig.editorconfig
+E:\CodeFolder\Cs_project\BookRecBackend\Api\obj\Debug\net8.0\Api.AssemblyInfoInputs.cache
+E:\CodeFolder\Cs_project\BookRecBackend\Api\obj\Debug\net8.0\Api.AssemblyInfo.cs
+E:\CodeFolder\Cs_project\BookRecBackend\Api\obj\Debug\net8.0\Api.csproj.CoreCompileInputs.cache
+E:\CodeFolder\Cs_project\BookRecBackend\Api\obj\Debug\net8.0\Api.MvcApplicationPartsAssemblyInfo.cs
+E:\CodeFolder\Cs_project\BookRecBackend\Api\obj\Debug\net8.0\Api.MvcApplicationPartsAssemblyInfo.cache
+E:\CodeFolder\Cs_project\BookRecBackend\Api\obj\Debug\net8.0\Api.sourcelink.json
 E:\CodeFolder\Cs_project\BookRecBackend\Api\bin\Debug\net8.0\appsettings.Development.json
 E:\CodeFolder\Cs_project\BookRecBackend\Api\bin\Debug\net8.0\appsettings.json
 E:\CodeFolder\Cs_project\BookRecBackend\Api\bin\Debug\net8.0\Api.exe
@@ -127,14 +135,6 @@ E:\CodeFolder\Cs_project\BookRecBackend\Api\bin\Debug\net8.0\Infrastructure.dll
 E:\CodeFolder\Cs_project\BookRecBackend\Api\bin\Debug\net8.0\Application.pdb
 E:\CodeFolder\Cs_project\BookRecBackend\Api\bin\Debug\net8.0\Infrastructure.pdb
 E:\CodeFolder\Cs_project\BookRecBackend\Api\bin\Debug\net8.0\Core.pdb
-E:\CodeFolder\Cs_project\BookRecBackend\Api\obj\Debug\net8.0\Api.csproj.AssemblyReference.cache
-E:\CodeFolder\Cs_project\BookRecBackend\Api\obj\Debug\net8.0\Api.GeneratedMSBuildEditorConfig.editorconfig
-E:\CodeFolder\Cs_project\BookRecBackend\Api\obj\Debug\net8.0\Api.AssemblyInfoInputs.cache
-E:\CodeFolder\Cs_project\BookRecBackend\Api\obj\Debug\net8.0\Api.AssemblyInfo.cs
-E:\CodeFolder\Cs_project\BookRecBackend\Api\obj\Debug\net8.0\Api.csproj.CoreCompileInputs.cache
-E:\CodeFolder\Cs_project\BookRecBackend\Api\obj\Debug\net8.0\Api.MvcApplicationPartsAssemblyInfo.cs
-E:\CodeFolder\Cs_project\BookRecBackend\Api\obj\Debug\net8.0\Api.MvcApplicationPartsAssemblyInfo.cache
-E:\CodeFolder\Cs_project\BookRecBackend\Api\obj\Debug\net8.0\Api.sourcelink.json
 E:\CodeFolder\Cs_project\BookRecBackend\Api\obj\Debug\net8.0\staticwebassets.build.json
 E:\CodeFolder\Cs_project\BookRecBackend\Api\obj\Debug\net8.0\staticwebassets.development.json
 E:\CodeFolder\Cs_project\BookRecBackend\Api\obj\Debug\net8.0\staticwebassets\msbuild.Api.Microsoft.AspNetCore.StaticWebAssets.props
