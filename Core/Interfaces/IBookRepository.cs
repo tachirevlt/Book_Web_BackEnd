@@ -1,6 +1,6 @@
 using Core.Entities;
 
-namespace Interfaces
+namespace Core.Interfaces
 {
     public interface IBookRepository
     {

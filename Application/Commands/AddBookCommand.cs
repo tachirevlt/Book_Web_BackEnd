@@ -1,7 +1,7 @@
 using MediatR;
 using Application.Events;
 using Core.Entities;
-using Core.Interfaces;
+using Core.Interfaces; 
 
 namespace Application.Commands
 {
@@ -14,7 +14,7 @@ namespace Application.Commands
         public async Task<BookEntity> Handle(AddBookCommand request, CancellationToken cancellationToken)
         {
             // Sửa tên biến và gọi phương thức AddBookAsync đã sửa ở bước 2
-            var createdBook = await bookRepository.AddBookAsync(request.Book, cancellationToken);
+            var createdBook = await bookRepository.AddBookAsync(request.Book);
 
             // Publish sự kiện liên quan đến sách (cần tạo class BookCreatedEvent)
             await mediator.Publish(new BookCreatedEvent(createdBook.Id), cancellationToken); // Giả sử bạn tạo BookCreatedEvent

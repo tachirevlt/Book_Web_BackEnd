@@ -1,4 +1,4 @@
-﻿using MediatR.NotificationPublishers;
+﻿using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Reflection;
 
 namespace Application
 {
@@ -13,11 +14,7 @@ namespace Application
     {
         public static IServiceCollection AddApplicationDI(this IServiceCollection services)
         {
-            services.AddMediatR(cfg =>
-            {
-                cfg.RegisterServicesFromAssembly(typeof(DependencyInjection).Assembly);
-                cfg.NotificationPublisher = new TaskWhenAllPublisher();
-            });
+            services.AddMediatR(Assembly.GetExecutingAssembly());
 
             return services;
         }

@@ -1,0 +1,13 @@
+E:\CodeFolder\Cs_project\BookRecBackend\Core\bin\Debug\net8.0\Core.deps.json
+E:\CodeFolder\Cs_project\BookRecBackend\Core\bin\Debug\net8.0\Core.dll
+E:\CodeFolder\Cs_project\BookRecBackend\Core\bin\Debug\net8.0\Core.pdb
+E:\CodeFolder\Cs_project\BookRecBackend\Core\obj\Debug\net8.0\Core.csproj.AssemblyReference.cache
+E:\CodeFolder\Cs_project\BookRecBackend\Core\obj\Debug\net8.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\CodeFolder\Cs_project\BookRecBackend\Core\obj\Debug\net8.0\Core.AssemblyInfoInputs.cache
+E:\CodeFolder\Cs_project\BookRecBackend\Core\obj\Debug\net8.0\Core.AssemblyInfo.cs
+E:\CodeFolder\Cs_project\BookRecBackend\Core\obj\Debug\net8.0\Core.csproj.CoreCompileInputs.cache
+E:\CodeFolder\Cs_project\BookRecBackend\Core\obj\Debug\net8.0\Core.sourcelink.json
+E:\CodeFolder\Cs_project\BookRecBackend\Core\obj\Debug\net8.0\Core.dll
+E:\CodeFolder\Cs_project\BookRecBackend\Core\obj\Debug\net8.0\refint\Core.dll
+E:\CodeFolder\Cs_project\BookRecBackend\Core\obj\Debug\net8.0\Core.pdb
+E:\CodeFolder\Cs_project\BookRecBackend\Core\obj\Debug\net8.0\ref\Core.dll
